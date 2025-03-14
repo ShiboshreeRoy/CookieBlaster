@@ -81,7 +81,7 @@ If you encounter any issues or have feature suggestions, please open an **Issue*
 ---
 
 ## 🔖 License
-This project is licensed under the **MIT License**. See the **LICENSE** file for more details.
+This project is licensed under the **MIT License**. See the **(LICENSE)** file for more details.
 
 ---
 
@@ -93,7 +93,7 @@ This project is licensed under the **MIT License**. See the **LICENSE** file for
 ---
 
 ## 📧 Contact
-For support, feedback, or collaboration inquiries, please contact me at [shiboshreeroy169@gmail.com](mailto:shiboshreeroy169@gmail.com).
+For support, feedback, or collaboration inquiries, please contact me at [Email](mailto:shiboshreeroy169@gmail.com).
 
 ---
 

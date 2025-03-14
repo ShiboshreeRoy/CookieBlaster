@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookieBlaster</title>
+    <link rel="stylesheet" href="./App/assest/style.css">
+    <link rel="shortcut icon" href="./App/assest/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>🍪 CookieBlaster</h1>
+        
+        <div class="controls">
+            <label for="interval">Cleaning Interval (minutes):</label>
+            <input type="number" id="interval" min="1" value="15">
+
+            <div class="toggle-container">
+                <label for="toggle">Auto-Clean:</label>
+                <div class="switch">
+                    <input type="checkbox" id="toggle">
+                    <span class="slider"></span>
+                </div>
+            </div>
+
+            <button id="cleanNow">Clean Now</button>
+        </div>
+
+        <div class="stats">
+            <p>🚀 Cookies Removed: <span id="cookieCount">0</span></p>
+            <p>🕒 Last Cleaned: <span id="lastCleaned">-</span></p>
+        </div>
+    </div>
+
+    <script src="./App/config/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "CookieBlaster",
+    "version": "1.0",
+    "description": "Automatically cleans cookies at set intervals and provides manual cleaning options.",
+    "permissions": [
+      "storage",
+      "alarms",
+      "cookies",
+      "notifications",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "./App/config/background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icon/icon16.png",
+      "48": "icon/icon48.png",
+      "128": "icon/icon128.png"
+    }
+  }
+  

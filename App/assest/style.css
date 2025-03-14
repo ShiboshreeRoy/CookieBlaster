@@ -1,0 +1,173 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Glassmorphic Card */
+.container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+}
+
+/* Header */
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(90deg, #ff3c7d, #ffa43c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Controls Section */
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Interactive Input Field */
+input[type="number"] {
+    width: 70px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Toggle Switch */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Toggle Switch Styling */
+.switch {
+    position: relative;
+    width: 55px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background: linear-gradient(135deg, #444, #222);
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.1),
+                inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #ccc, #fff);
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: 0.3s;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+input:checked + .slider {
+    background: linear-gradient(135deg, #00ff99, #009966);
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.6);
+}
+
+input:checked + .slider::before {
+    transform: translateX(29px);
+    background: white;
+}
+
+/* Premium Glowing Button */
+button {
+    background: linear-gradient(135deg, #ff007f, #ff4500);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 15px rgba(255, 69, 0, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff0055, #d400ff);
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(255, 0, 127, 0.6);
+}
+
+/* Interactive Stats Box */
+.stats {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.stats:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.3);
+}
+
+.stats p {
+    font-size: 15px;
+    margin: 8px 0;
+}
